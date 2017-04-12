@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"diffrobot\stm32f0xx_hal_cortex.o"
+"diffrobot\stm32f0xx_hal_pwr.o"
+"diffrobot\stm32f0xx_hal_tim.o"
+"diffrobot\stm32f0xx_hal_flash_ex.o"
+"diffrobot\stm32f0xx_hal_i2c.o"
+"diffrobot\stm32f0xx_hal_dma.o"
+"diffrobot\stm32f0xx_hal_flash.o"
+"diffrobot\stm32f0xx_hal_gpio.o"
+"diffrobot\stm32f0xx_hal_rcc.o"
+"diffrobot\stm32f0xx_hal.o"
+"diffrobot\stm32f0xx_hal_i2c_ex.o"
+"diffrobot\stm32f0xx_hal_rcc_ex.o"
+"diffrobot\stm32f0xx_hal_pwr_ex.o"
+"diffrobot\stm32f0xx_hal_tim_ex.o"
+"diffrobot\system_stm32f0xx.o"
+"diffrobot\startup_stm32f030x8.o"
+"diffrobot\stm32f0xx_hal_msp.o"
+"diffrobot\stm32f0xx_it.o"
+"diffrobot\main.o"
+"diffrobot\tim.o"
+"diffrobot\gpio.o"
+--library_type=microlib --strict --scatter "diffRobot\diffRobot.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "diffRobot.map" -o diffRobot\diffRobot.axf
